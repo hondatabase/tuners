@@ -1,0 +1,109 @@
+body {
+    font-family     : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size       : 14px;
+    background-color: #f5f5f5;
+}
+
+a, a:visited {
+    color: black;
+}
+
+.tuners-container {
+    /* background-color: rgba(0, 0, 0, 0.01); */
+    background-color: white;
+    display         : flex;
+    justify-content : flex-start;
+    padding         : 10px;
+    border-radius   : 5px;
+}
+
+.tuner {
+    text-align      : center;
+    width           : 100%;
+    border          : 1px solid #ccc;
+    border-radius   : 3px;
+    padding         : 10px;
+    background-color: #fff;
+    box-shadow      : 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition      : box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.tuner:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.tuner a {
+    text-decoration: none;
+    color         : black;
+    display       : inline-block;
+    transition: transform 0.5s ease;
+    text-align: center;
+    vertical-align: baseline;
+    /* Center Text Vertically */
+    display        : inline-flex;
+    align-items    : center;
+    gap            : 5px;
+
+}
+
+.tuner a:hover {
+    transform: translateY(-2px);
+}
+
+.tuner > div:first-child {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 10px;
+    font-size      : 1.5em;
+    font-weight    : bold;
+}
+
+.tuner > div:first-child > div {
+    display        : flex;
+    justify-content: center;
+    flex-direction: column;
+    gap            : 5px;
+}
+
+.tuner > div:first-child > div > div {
+    display        : flex;
+    justify-content: center;
+    gap            : 5px;
+}
+
+.tuner > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size : 1.1em;
+
+}
+
+.tuner img {
+    display      : inline-block;
+    width        : 100px;
+    height       : 100px;
+    border       : 1px solid #ccc;
+    border-radius: 50%;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .tuners-container {
+        /* justify-content: center; */
+    }
+
+    .tuner {
+        width : 300px;
+        /* margin: 0 10px; */
+    }
+}
